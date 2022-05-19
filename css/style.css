@@ -8362,7 +8362,8 @@ textarea.form-control-lg {
 
 body {
   font-family: MotivaSans;
-  font-size: 16px; }
+  font-size: 16px;
+  color: #232649; }
 
 @media (max-width: 1200px) {
   h1, .h1 {
@@ -8426,7 +8427,9 @@ body {
   #header-text {
     font-family: MotivaSans;
     letter-spacing: -1px;
-    line-height: 1em; } }
+    line-height: 1em; }
+  .fa-headset {
+    color: #2196fc; } }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
   .carousel-container {
@@ -8437,19 +8440,27 @@ body {
   #header-text {
     width: 79%; }
   #header-img {
-    right: -28px; } }
+    right: -28px; }
+  #features {
+    background: url("../resources/Laptop + Phone.png") no-repeat right; } }
 
 @media (min-width: 1200px) {
   #header-text {
     font-family: MotivaSansExtraBold;
     letter-spacing: -3px;
-    line-height: 1em; } }
+    line-height: 1em; }
+  .fa-headset.icon-odd {
+    color: #2196fc; }
+  .fa-headset.icon-even {
+    color: #bc4595; } }
 
 @media (min-width: 1400px) {
   #header-text {
     width: 75%; }
   #header-img {
-    right: 0px; } }
+    right: 0px; }
+  #features-container {
+    background: url("../resources/Laptop + Phone.png") no-repeat right bottom; } }
 
 #header-img {
   position: absolute;
@@ -8457,6 +8468,9 @@ body {
 
 .line-height-1em {
   line-height: 1em; }
+
+.line-height-1-point-2-em {
+  line-height: 1.2em; }
 
 .btn-start-now1 {
   color: white;
@@ -8477,8 +8491,82 @@ body {
   border-radius: 18px;
   filter: drop-shadow(0 8px 8px rgba(72, 72, 72, 0.12)); }
 
-.icon-blue {
+.bg-blue {
   background-color: #007ad8; }
 
-.icon-pink {
+.bg-pink {
   background-color: #bc4595; }
+
+.bg-blue3 {
+  background-color: #2196fc; }
+
+.MotivaSansExtraBold {
+  font-family: MotivaSansExtraBold; }
+
+.text-pink {
+  color: #bc4595; }
+
+.text-dark-blue {
+  color: #232649; }
+
+.btn-lets-get-started {
+  color: white;
+  background-color: #bc4595; }
+
+@media (max-width: 1199px) {
+  .btn-get-more-info {
+    color: #bc4595;
+    border: solid 2px #bc4595; } }
+
+@media (min-width: 1200px) {
+  .btn-get-more-info {
+    color: #bc4595;
+    border: none; } }
+
+.MotivaSansBold {
+  font-family: MotivaSansBold; }
+
+.text-justify {
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto; }
+
+.banner-container {
+  position: relative; }
+
+#banner-blue-box {
+  position: absolute;
+  width: 90%;
+  background-image: linear-gradient(white 5%, #007ad8 5% 97%, #d6f0ff 97% 100%); }
+
+#banner-text {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 9; }
+
+@media (max-width: 1199px) {
+  #banner-blue-box {
+    width: 100%;
+    left: 0%; }
+  #banner-img {
+    zoom: 50%; } }
+
+@media (min-width: 1200px) {
+  #banner {
+    background-image: linear-gradient(white 50%, #d6f0ff 50%); }
+  #banner-blue-box {
+    width: 90%;
+    left: 5%; } }
+
+.btn-contact-us {
+  color: white;
+  background-color: none; }
+
+.btn-lets-get-started-blue {
+  color: #232649;
+  background-color: white; }
