@@ -1,0 +1,25 @@
+{
+  "name": "webarray",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch scss -o css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agnKomorowska/webarray.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agnKomorowska/webarray/issues"
+  },
+  "homepage": "https://github.com/agnKomorowska/webarray#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
+    "node-sass": "^7.0.1"
+  }
+}

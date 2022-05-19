@@ -1,0 +1,208 @@
+/* import the necessary Bootstrap files */
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$carousel-control-width: 10%;
+
+$navbar-toggler-font-size: 1.5rem;
+$btn-border-radius: 4px;
+$btn-border-radius-sm: 6px;
+$btn-border-radius-lg: 6px;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: "MotivaSans";
+    src: url("./../resources/motiva-sans/MotivaSansRegular.woff.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MotivaSansBold";
+    src: url("./../resources/motiva-sans/MotivaSansBold.woff.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MotivaSansExtraBold";
+    src: url("./../resources/motiva-sans/MotivaSansExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MotivaSansBlack";
+    src: url("./../resources/motiva-sans/MotivaSansBlack.woff.ttf") format("truetype");
+}
+
+$gradient-purple: rgba(132, 73, 154, 1);
+$gradient-pink: rgba(199, 68, 148, 1);
+$gradient-orange: rgba(244, 155, 146, 1);
+
+$gradient-purple-nav: rgba(132, 73, 154, 0.8);
+$gradient-pink-nav: rgba(199, 68, 148, 0.8);
+$gradient-orange-nav: rgba(244, 155, 146, 0.8);
+
+$gradient-purple-nav2: rgba(132, 73, 154, 0.85);
+$gradient-pink-nav2: rgba(199, 68, 148, 0.85);
+$gradient-orange-nav2: rgba(244, 155, 146, 0.85);
+
+$color-pink: #bc4595;
+$color-dark-blue: #232649;
+$color-blue: #007ad8;
+$color-blue2: #003083;
+$color-green: #0a473d;
+$color-orange: #ff8a65;
+$color-blue3: #2196fc;
+
+
+body {
+    font-family: MotivaSans;
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.75rem; }
+    h4 { font-size: 1.125rem; }
+    p  { font-size: 1.25rem; }
+    small { font-size: 0.875rem; }
+
+    .btn-std { font-size: 1.25rem; }
+    .btn-lg { font-size: 1.125rem; }
+}
+
+@media (min-width: 1200px) {
+    h1 { font-size: 5rem; }
+    h2 { font-size: 4rem; }
+    h3 { font-size: 3rem; }
+    h4 { font-size: 2rem; }
+    p  { font-size: 1.5rem; }
+    small { font-size: 1.125rem; }
+
+    .btn-std { font-size: 1.75rem; }
+    .btn-lg { font-size: 2.25rem; }
+}
+
+.gradient1 {
+    background: $gradient-purple;
+    background: linear-gradient(90deg, $gradient-purple-nav 0%, $gradient-pink-nav 50%, $gradient-orange-nav 100%);
+}
+
+.gradient2 {
+    background: $gradient-purple;
+    background: linear-gradient(90deg, $gradient-purple-nav2 0%, $gradient-pink-nav2 50%, $gradient-orange-nav2 100%);
+}
+.gradient3 {
+    background: $gradient-purple;
+    background: linear-gradient(90deg, $gradient-purple 0%, $gradient-pink 50%, $gradient-orange 100%);
+}
+
+.btn-quote {
+    color: white;
+    background-color: $color-pink;
+    box-shadow: 1px 1px 15px rgba(72, 72, 72, 0.4);
+    
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+
+
+@media (max-width: 1199px) {
+    .bold-word {
+        font-family: MotivaSansExtraBold;
+    }
+
+    #header-text {
+        font-family: MotivaSans;
+        letter-spacing: -1px;
+        line-height: 1em;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .carousel-container {
+        width: 90%;
+    }
+    .carousel-inner {
+        width: 105%;
+        margin-right: -5%;
+    }
+    #header-text {
+        width: 79%;
+    }
+    #header-img {
+        right: -28px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #header-text {
+        font-family: MotivaSansExtraBold;
+        letter-spacing: -3px;
+        line-height: 1em;
+    }
+}
+
+@media (min-width: 1400px) {
+    #header-text {
+        width: 75%;
+    }
+    #header-img {
+        right: 0px;
+    }
+}
+
+#header-img {
+    position: absolute;
+    bottom: 0px;
+}
+
+.line-height-1em {
+    line-height: 1em;
+}
+
+.btn-start-now1 {
+    color: white;
+    background-color: black;
+}
+
+@media (max-width: 1199px) {
+    .btn-start-now2 {
+        border: solid 2px black;
+    }
+}
+
+@media (min-width: 1200px) {
+    .btn-start-now2 {
+        border: none;
+    }
+}
+
+.fa-globe-africa {
+    color:white;
+    background-color: $color-blue;
+    padding: 8px;
+    border-radius: 18px;
+    filter: drop-shadow(0 8px 8px rgba(72, 72, 72, 0.12));
+}
+
+.icon-blue {
+    background-color: $color-blue;
+}
+
+.icon-pink {
+    background-color: $color-pink;
+}
+
+// .carousel-control-prev-icon {
+//     position: absolute;
+//     left: 4rem;
+
+// }
+
+// .carousel-control-next-icon {
+//     position: absolute;
+//     right: 4rem;
+// }
+
