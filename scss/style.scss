@@ -71,7 +71,7 @@ body {
     small { font-size: 0.875rem; }
 
     .btn-std { font-size: 1.25rem; }
-    .btn-lg { font-size: 1.125rem; }
+    .btn-lg { font-size: 1.5rem; }
 }
 
 @media (min-width: 1200px) {
@@ -356,6 +356,24 @@ body {
     background-color: $color-bg-blue;
 }
 
+.btn-view-more-features {
+    color: $color-blue;
+    background-color: $color-bg-blue;
+}
+
+.btn-view-more-features:hover,
+.btn-view-more-features:active,
+.btn-view-more-features:focus {
+    color: $color-blue;
+    background-color: $color-bg-blue;
+}
+
 #icons-bg-blue {
     background-color: $color-bg-blue;
+}
+
+#diagonal-bg {
+    background: $color-bg-blue;
+    background: linear-gradient(to left bottom, $color-bg-blue 50%, white 50%);
+    min-height: 75px;
 }

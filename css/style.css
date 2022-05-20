@@ -8381,7 +8381,7 @@ body {
   .btn-std {
     font-size: 1.25rem; }
   .btn-lg, .btn-group-lg > .btn {
-    font-size: 1.125rem; } }
+    font-size: 1.5rem; } }
 
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -8588,5 +8588,20 @@ body {
   color: #007ad8;
   background-color: #d6f0ff; }
 
+.btn-view-more-features {
+  color: #007ad8;
+  background-color: #d6f0ff; }
+
+.btn-view-more-features:hover,
+.btn-view-more-features:active,
+.btn-view-more-features:focus {
+  color: #007ad8;
+  background-color: #d6f0ff; }
+
 #icons-bg-blue {
   background-color: #d6f0ff; }
+
+#diagonal-bg {
+  background: #d6f0ff;
+  background: linear-gradient(to left bottom, #d6f0ff 50%, white 50%);
+  min-height: 75px; }
