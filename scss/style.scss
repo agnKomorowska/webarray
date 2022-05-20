@@ -356,6 +356,23 @@ body {
     background-color: $color-bg-blue;
 }
 
+.btn-view-more-features {
+    color: $color-blue;
+    background-color: $color-bg-blue;
+}
+
+.btn-view-more-features:hover,
+.btn-view-more-features:active,
+.btn-view-more-features:focus {
+    color: $color-blue;
+    background-color: $color-bg-blue;
+}
+
 #icons-bg-blue {
     background-color: $color-bg-blue;
+}
+
+#diagonal-bg {
+    background: $color-bg-blue;
+    background: linear-gradient(to left bottom, $color-bg-blue 50%, white 50%);
 }
