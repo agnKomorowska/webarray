@@ -8477,8 +8477,13 @@ body {
 .line-height-1em {
   line-height: 1em; }
 
-.line-height-1-point-2-em {
-  line-height: 1.2em; }
+@media (max-width: 1199px) {
+  .line-height-medium {
+    line-height: 1.5em; } }
+
+@media (min-width: 1200px) {
+  .line-height-medium {
+    line-height: 1.2em; } }
 
 .btn-start-now1 {
   color: white;
@@ -8516,6 +8521,9 @@ body {
 
 .text-dark-blue {
   color: #232649; }
+
+.text-blue {
+  color: #007ad8; }
 
 .btn-lets-get-started {
   color: white;
@@ -8572,6 +8580,16 @@ body {
     width: 90%;
     left: 5%; } }
 
+@media (min-width: 1600px) {
+  #banner-blue-box {
+    width: 80%;
+    left: 10%; } }
+
+@media (min-width: 2000px) {
+  #banner-blue-box {
+    width: 70%;
+    left: 15%; } }
+
 .btn-contact-us {
   color: white;
   background-color: none; }
@@ -8601,7 +8619,98 @@ body {
 #icons-bg-blue {
   background-color: #d6f0ff; }
 
+.bg-green {
+  background-color: #0a473d; }
+
 #diagonal-bg {
   background: #d6f0ff;
-  background: linear-gradient(to left bottom, #d6f0ff 50%, white 50%);
   min-height: 75px; }
+
+@media (max-width: 1199px) {
+  #diagonal-bg {
+    background: linear-gradient(to left bottom, #d6f0ff 50%, #f2f2f2 50%); } }
+
+@media (min-width: 1200px) {
+  #diagonal-bg {
+    background: linear-gradient(to left bottom, #d6f0ff 50%, white 50%); } }
+
+#globe-wrapper {
+  position: relative; }
+
+#devices-globe {
+  position: absolute; }
+
+#devices-text {
+  position: relative; }
+
+@media (min-width: 1400px) {
+  #devices-globe {
+    zoom: 125%; } }
+
+#devices-phone {
+  background-image: url("../resources/Phone.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top; }
+
+#devices-container {
+  position: relative; }
+
+#devices-guy {
+  position: absolute;
+  right: -80px;
+  bottom: 0px; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.card {
+  color: black;
+  border: 2px solid black;
+  border-radius: 30px; }
+
+.card {
+  width: 100%; }
+
+.card:before {
+  content: "";
+  display: block;
+  padding-top: 12%; }
+
+.card:after {
+  content: "";
+  display: block;
+  padding-bottom: 14%; }
+
+.btn-lets-get-started-blue {
+  color: white;
+  background-color: #007ad8; }
+
+.btn-lets-get-started-blue:hover,
+.btn-lets-get-started-blue:active,
+.btn-lets-get-started-blue:focus {
+  color: #007ad8;
+  background-color: white; }
+
+.bg-beige {
+  background-color: #f2f2f2; }
+
+@media (max-width: 1199px) {
+  .bg-beige {
+    background-color: #f2f2f2; } }
+
+@media (min-width: 1200px) {
+  .bg-beige {
+    background-color: white; } }
+
+.btn-learn-more {
+  color: #007ad8;
+  background-color: none; }
+
+.btn-learn-more:hover,
+.btn-learn-more:active,
+.btn-learn-more:focus {
+  color: #007ad8;
+  background-color: white; }

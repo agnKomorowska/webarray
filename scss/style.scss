@@ -195,8 +195,16 @@ body {
     line-height: 1em;
 }
 
-.line-height-1-point-2-em {
-    line-height: 1.2em;
+@media (max-width: 1199px) {
+    .line-height-medium {
+        line-height: 1.5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .line-height-medium {
+        line-height: 1.2em;
+    }
 }
 
 .btn-start-now1 {
@@ -258,6 +266,10 @@ body {
 
 .text-dark-blue {
     color: $color-dark-blue;
+}
+
+.text-blue {
+    color: $color-blue;
 }
 
 .btn-lets-get-started {
@@ -327,12 +339,25 @@ body {
     }
 }
 
-
-
 @media (min-width: 1200px) {
     #banner-blue-box {
         width: 90%;
         left: 5%;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    #banner-blue-box {
+        width: 80%;
+        left: 10%;
+    }
+}
+
+@media (min-width: 2000px) {
+    #banner-blue-box {
+        width: 70%;
+        left: 15%;
     }
 }
 
@@ -372,8 +397,127 @@ body {
     background-color: $color-bg-blue;
 }
 
+.bg-green {
+    background-color: $color-green;
+}
+
 #diagonal-bg {
     background: $color-bg-blue;
-    background: linear-gradient(to left bottom, $color-bg-blue 50%, white 50%);
     min-height: 75px;
+}
+
+@media (max-width: 1199px) {
+    #diagonal-bg {
+        background: linear-gradient(to left bottom, $color-bg-blue 50%, $color-bg-beige 50%);
+    }
+}
+
+@media (min-width: 1200px) {
+    #diagonal-bg {
+        background: linear-gradient(to left bottom, $color-bg-blue 50%, white 50%);
+    }
+}
+
+#globe-wrapper {
+    position: relative;
+}
+
+#devices-globe {
+    position: absolute;
+}
+
+#devices-text {
+    position: relative;
+}
+
+@media (min-width: 1400px) {
+    #devices-globe {
+        zoom: 125%;
+    }
+}
+
+#devices-phone {
+    background-image: url("../resources/Phone.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top;
+}
+
+#devices-container {
+    position: relative;
+}
+
+#devices-guy {
+    position: absolute;
+    right: -80px;
+    bottom: 0px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    color: black;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+
+.card {
+    width: 100%;
+}
+
+.card:before {
+    content: "";
+    display: block;
+    padding-top: 12%;
+}
+
+.card:after {
+    content: "";
+    display: block;
+    padding-bottom: 14%;
+}
+
+.btn-lets-get-started-blue {
+    color: white;
+    background-color: $color-blue;
+}
+
+.btn-lets-get-started-blue:hover,
+.btn-lets-get-started-blue:active,
+.btn-lets-get-started-blue:focus {
+    color: $color-blue;
+    background-color: white;
+}
+
+.bg-beige {
+    background-color: $color-bg-beige;
+}
+
+@media (max-width: 1199px) {
+    .bg-beige {
+        background-color: $color-bg-beige;
+    }
+}
+
+@media (min-width: 1200px) {
+    .bg-beige {
+        background-color: white;
+    }
+}
+
+.btn-learn-more {
+    color: $color-blue;
+    background-color: none;
+}
+
+.btn-learn-more:hover,
+.btn-learn-more:active,
+.btn-learn-more:focus {
+    color: $color-blue;
+    background-color: white;
 }
