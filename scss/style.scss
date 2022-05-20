@@ -111,7 +111,17 @@ body {
     border: none;
 }
 
+@media (max-width: 412px) {
+    #header-logo-sm {
+        zoom: 75%;
+    }
+}
 
+@media (max-width: 320px) {
+    #header-logo-sm {
+        zoom: 60%;
+    }
+}
 
 @media (max-width: 1199px) {
     .bold-word {
@@ -295,6 +305,10 @@ body {
     // box-shadow: 1px 1px 15px rgba(72, 72, 72, 0.4);
 }
 
+#banner {
+    background-image: linear-gradient(white 50%, $color-bg-blue 50%);
+}
+
 #banner-text {
     position: relative;
     width: 100%;
@@ -311,15 +325,11 @@ body {
     #banner-img {
         zoom: 50%;
     }
-    
 }
 
+
+
 @media (min-width: 1200px) {
-
-    #banner {
-        background-image: linear-gradient(white 50%, $color-bg-blue 50%);
-    }
-
     #banner-blue-box {
         width: 90%;
         left: 5%;
@@ -334,4 +344,18 @@ body {
 .btn-lets-get-started-blue {
     color: $color-dark-blue;
     background-color: white;
+}
+
+.btn-start-now-blue {
+    color: white;
+    background-color: $color-blue;
+}
+
+.btn-start-now-blue:hover, .btn-start-now-blue:active, .btn-start-now-blue:focus {
+    color: $color-blue;
+    background-color: $color-bg-blue;
+}
+
+#icons-bg-blue {
+    background-color: $color-bg-blue;
 }

@@ -8421,6 +8421,14 @@ body {
 .navbar-toggler {
   border: none; }
 
+@media (max-width: 412px) {
+  #header-logo-sm {
+    zoom: 75%; } }
+
+@media (max-width: 320px) {
+  #header-logo-sm {
+    zoom: 60%; } }
+
 @media (max-width: 1199px) {
   .bold-word {
     font-family: MotivaSansExtraBold; }
@@ -8543,6 +8551,9 @@ body {
   width: 90%;
   background-image: linear-gradient(white 5%, #007ad8 5% 97%, #d6f0ff 97% 100%); }
 
+#banner {
+  background-image: linear-gradient(white 50%, #d6f0ff 50%); }
+
 #banner-text {
   position: relative;
   width: 100%;
@@ -8557,8 +8568,6 @@ body {
     zoom: 50%; } }
 
 @media (min-width: 1200px) {
-  #banner {
-    background-image: linear-gradient(white 50%, #d6f0ff 50%); }
   #banner-blue-box {
     width: 90%;
     left: 5%; } }
@@ -8570,3 +8579,14 @@ body {
 .btn-lets-get-started-blue {
   color: #232649;
   background-color: white; }
+
+.btn-start-now-blue {
+  color: white;
+  background-color: #007ad8; }
+
+.btn-start-now-blue:hover, .btn-start-now-blue:active, .btn-start-now-blue:focus {
+  color: #007ad8;
+  background-color: #d6f0ff; }
+
+#icons-bg-blue {
+  background-color: #d6f0ff; }
