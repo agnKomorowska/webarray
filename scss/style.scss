@@ -272,24 +272,43 @@ body {
     color: $color-blue;
 }
 
-.btn-lets-get-started {
+.btn-lets-get-started-pink {
     color: white;
     background-color: $color-pink;
+}
 
+.btn-lets-get-started-pink:hover,
+.btn-lets-get-started-pink:active,
+.btn-lets-get-started-pink:focus {
+    color: $color-pink;
+    background-color: white;
 }
 
 @media (max-width: 1199px) {
-    .btn-get-more-info {
+    .btn-get-more-info-pink {
         color: $color-pink;
-        border: solid 2px $color-pink;
+        border: solid 1px $color-pink;
+    }
+
+    .btn-get-more-info-pink:hover,
+    .btn-get-more-info-pink:active,
+    .btn-get-more-info-pink:focus {
+        color: black;
+        border: solid 1px black;
     }
 }
 
 @media (min-width: 1200px) {
-    .btn-get-more-info {
+    .btn-get-more-info-pink {
         color: $color-pink;
         border: none;
     }
+
+        .btn-get-more-info-pink:hover,
+        .btn-get-more-info-pink:active,
+        .btn-get-more-info-pink:focus {
+            color: black;
+        }
 }
 
 .MotivaSansBold {
@@ -384,13 +403,14 @@ body {
 .btn-view-more-features {
     color: $color-blue;
     background-color: $color-bg-blue;
+    border: none;
 }
 
 .btn-view-more-features:hover,
 .btn-view-more-features:active,
 .btn-view-more-features:focus {
-    color: $color-blue;
-    background-color: $color-bg-blue;
+    color: black;
+    border: none;
 }
 
 #icons-bg-blue {
@@ -569,4 +589,28 @@ ul {
 
 footer {
     background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+a:hover,
+a:active,
+a:focus{
+    color: gray;
+}
+
+@media (max-width: 1199px) {
+    .all-rights-reserved {
+        color: gray;
+    }
+}
+
+@media (min-width: 1200px) {
+    .all-rights-reserved {
+        color: white;
+    }
 }
