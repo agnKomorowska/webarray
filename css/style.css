@@ -8666,20 +8666,18 @@ ul {
   padding: 0;
   margin: 0; }
 
-.card {
+.card-constructions {
+  width: 100%;
   color: black;
   border: 2px solid black;
   border-radius: 30px; }
 
-.card {
-  width: 100%; }
-
-.card:before {
+.card-constructions:before {
   content: "";
   display: block;
   padding-top: 12%; }
 
-.card:after {
+.card-constructions:after {
   content: "";
   display: block;
   padding-bottom: 14%; }
@@ -8714,3 +8712,44 @@ ul {
 .btn-learn-more:focus {
   color: #007ad8;
   background-color: white; }
+
+.bg-light-green {
+  background-color: #cef7dc; }
+
+.card-pricing {
+  border: none;
+  border-radius: 10px; }
+
+.img-pricing {
+  height: min-content;
+  width: min-content;
+  object-fit: none; }
+
+.btn-orange {
+  color: white;
+  background-color: #ff8a65; }
+
+.btn-orange:hover,
+.btn-orange:active,
+.btn-orange:focus {
+  color: #ff8a65;
+  background-color: white; }
+
+@media (max-width: 1199px) {
+  .btn-orange-green {
+    color: white;
+    background-color: #ff8a65; } }
+
+@media (min-width: 1200px) {
+  .btn-orange-green {
+    color: black;
+    background-color: #ff8a65; } }
+
+.btn-orange-green:hover,
+.btn-orange-green:active,
+.btn-orange-green:focus {
+  color: #ff8a65;
+  background-color: #0a473d; }
+
+footer {
+  background-color: black; }
